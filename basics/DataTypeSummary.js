@@ -21,9 +21,9 @@ console.log(id === anotherId);
 
 
 
-// Reference (Non primitive)
+// // Reference (Non primitive)
 
-// Array, Objects, Functions
+// // Array, Objects, Functions
 
 const heros = ["shaktiman", "naagraj", "doga"];
 
@@ -40,12 +40,12 @@ console.log(typeof anotherId);
 
 console.log( typeof myFunction);
 
-// https://262.ecma-international.org/5.1/#sec-11.4.3
+// // https://262.ecma-international.org/5.1/#sec-11.4.3
 
-// Return type of variables in JavaScript
-// 1) Primitive Datatypes
-//        Number => number
-//        String  => string
+// // Return type of variables in JavaScript
+// // 1) Primitive Datatypes
+// //        Number => number
+// //        String  => string
 //        Boolean  => boolean
 //        null  => object
 //        undefined  =>  undefined
@@ -56,3 +56,10 @@ console.log( typeof myFunction);
 //        Arrays  =>  object
 //        Function  =>  function
 //        Object  =>  object
+
+
+
+ 
+
+
+
