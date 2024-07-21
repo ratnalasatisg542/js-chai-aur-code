@@ -42,4 +42,4 @@ console.log("c" , myArr);
 console.log(mynew2);
 
 // //slice() does not manupulate main array.
-// => splice() manupulate original array.
+// => splice() manupulate original array
