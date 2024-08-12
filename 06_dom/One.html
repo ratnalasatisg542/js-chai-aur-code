@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+
+<script > 
+    
+    // document.getElementById("title")
+
+    // document.getElementById("title").id
+
+    // document.getElementsByName("title").className
+
+    // document.getElementById("title").getAttribute("id")
+
+    // document.getElementById("title").getAttribute("class")
+
+    // document.getElementById("title").setAttribute("class" , "test") // it over writes class name
+
+    //  const title = document.getElementById("title")
+
+    //  title
+
+    //  title.style.backgroundColor = "blue"
+
+    //  title.style.padding = "20px;"
+
+    //  title.textContent
+    //  'DOM learning on Chai aur code test text'
+    
+
+    //  title.innerHTML
+    // 'DOM learning on Chai aur code <span style="display: none;">test text</span>'
+
+
+    // title.innerText
+    // 'DOM learning on Chai aur code'
+
+    // document.querySelector("h1")
+
+    // document.querySelector("h2[1]")
+
+
+    // document.querySelector(".heading")
+
+    // document.querySelectorAll("#title")
+
+    // document.querySelector("input[type= "passward"]")
+
+// const myul = document.querySelectorAll("ul")
+
+// myul.querySelector("li")
+
+// const turngreen = myul.querySelector("li")
+
+
+document.querySelectorAll("li")// it gives you node list 
+
+//if you want to change elements we have to menstion the position 
+
+const templist = document.querySelectorAll("li")
+
+templist[0].style.color = "blue"
+
+templist.forEach( function (l) {
+ l.style.backgroundColor = "red"
+})
+
+//convert list to array
+
+Array.from (templist)
+
+
+const myCovArr = Array.from(templist)
+
+myCovArr.forEach(function (arr) {
+   
+    arr.style.color = "green"
+})
+
+
+
+
+</script>
+</html>
