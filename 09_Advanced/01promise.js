@@ -69,9 +69,9 @@ function TakeTrash (){
     })
 }
 
-go_for_dog_walk().then(value =>{ console.log(value); return CleanKitchen()})
-                 .then(value => { console.log(value); return TakeTrash()})
-                 .then(value => {console.log(value); console.log("ypu have finished all the task");
+go_for_dog_walk().then( (value) =>{ console.log(value); return CleanKitchen()})
+                 .then( (value) => { console.log(value); return TakeTrash()})
+                 .then( (value) => {console.log(value); console.log("ypu have finished all the task");
                  })
                  .catch(error => { console.error(error);
                  })
