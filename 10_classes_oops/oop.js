@@ -26,3 +26,16 @@ function user ( UserName , UserLoggedIn , UserSignedIn){
  const userOne = new user("satish", 5, true);
  const userTwo = new user("Rao", 5, true);
 console.log(userOne);
+
+
+//object constructor 
+
+function person (){
+  this.name = name ;
+  this.gender = gender;
+  this.age = age;
+
+}
+
+const father = new person ("Rhs", "M" , 22);
+const mom = new person ("Hema", "F" , 25);
