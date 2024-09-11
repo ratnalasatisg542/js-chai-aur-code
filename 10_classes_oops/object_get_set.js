@@ -9,3 +9,6 @@ const user ={
         return this._email = value;
      }
 }
+
+const chai = Onject.create(user)
+console.log(chai.email);
