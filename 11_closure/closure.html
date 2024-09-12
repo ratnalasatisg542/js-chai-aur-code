@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: black;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+</body>
+<script>
+// function init() {
+//           let name = "Mozilla"; 
+//          function displayName() {
+//            console.log(name); // use variable declared in the parent function
+//          }
+//           displayName();
+//           }
+//          init();
+
+
+
+//Lexical scoping
+
+// function outer(){
+//     let username = "satish";
+//      function inner (){
+//         let secret = "1223"
+//         console.log( "inner" ,username); 
+//      }
+//      function innerTwo (){
+//         console.log("innerTwo", username);
+//         console.log(secret);
+        
+//      }
+//      inner()
+//      innerTwo()
+// }
+// outer()
+// console.log( "tto outer" , username);
+
+</script>
+
+<script>
+
+
+    //Closure
+    function makeFunc() {
+  const name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+const myFunc = makeFunc();
+myFunc();
+
+
+</script>
+
+<script>
+    function clickHand (color){
+        return function(){
+            document.body.style.backgroundColor =`${color}`
+        }
+    }
+    document.getElementById("orange").onclick = clickHand("orange")
+    document.getElementById("green").onclick = clickHand("green")
+</script>
+</html>
